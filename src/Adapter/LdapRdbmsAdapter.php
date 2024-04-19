@@ -7,7 +7,7 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth\Adapter;
+namespace czhujer\Slim\Auth\Adapter;
 
 use Laminas\Authentication\Adapter\AbstractAdapter;
 use laminas\Authentication\Result as AuthenticationResult;
