@@ -13,7 +13,7 @@ use Laminas\Authentication\Adapter\AbstractAdapter;
 use Laminas\Authentication\Result as AuthenticationResult;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
-use marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface;
+use czhujer\Slim\Auth\Events\SlimAuthEventInterface;
 
 /**
  * Authenticate through LDAP

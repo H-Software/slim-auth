@@ -9,8 +9,8 @@
  */
 namespace czhujer\Slim\Auth\Handlers;
 
-use marcelbonnet\Slim\Auth\Exception\HttpForbiddenException;
-use marcelbonnet\Slim\Auth\Exception\HttpUnauthorizedException;
+use czhujer\Slim\Auth\Exception\HttpForbiddenException;
+use czhujer\Slim\Auth\Exception\HttpUnauthorizedException;
 use Psr\Http\Message\ResponseInterface;
 
 /**
