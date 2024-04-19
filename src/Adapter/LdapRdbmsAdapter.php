@@ -7,13 +7,13 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth\Adapter;
+namespace czhujer\Slim\Auth\Adapter;
 
-use Zend\Authentication\Adapter\AbstractAdapter;
-use Zend\Authentication\Result as AuthenticationResult;
+use Laminas\Authentication\Adapter\AbstractAdapter;
+use Laminas\Authentication\Result as AuthenticationResult;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
-use marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface;
+use czhujer\Slim\Auth\Events\SlimAuthEventInterface;
 
 /**
  * Authenticate through LDAP
@@ -55,11 +55,11 @@ class LdapRdbmsAdapter extends AbstractAdapter
     protected $options				= null;
     
     /**
-     * @var \marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface
+     * @var \czhujer\Slim\Auth\Events\SlimAuthEventInterface
      */
     protected $authenticationEvent	= null;
     /**
-     * @var \marcelbonnet\Slim\Auth\Events\SlimAuthorizationEventInterface
+     * @var \czhujer\Slim\Auth\Events\SlimAuthorizationEventInterface
      */
     protected $authorizationEvent	= null;
 
@@ -180,11 +180,11 @@ class LdapRdbmsAdapter extends AbstractAdapter
      */
     private function authenticateLdap()
     {
-    	$configReader = new \Zend\Config\Reader\Ini();
+    	$configReader = new \Laminas\Config\Reader\Ini();
     	$configData = $configReader->fromFile(self::$configFile);
-    	$config = new \Zend\Config\Config($configData, false);
+    	$config = new \Laminas\Config\Config($configData, false);
     	$options = $config->ldapauth->ldap->toArray();
-    	$adapter = new \Zend\Authentication\Adapter\Ldap($options);
+    	$adapter = new \Laminas\Authentication\Adapter\Ldap($options);
     	$adapter->setIdentity($this->getIdentity());
     	$adapter->setCredential($this->getCredential());
     	return $adapter->authenticate();
@@ -194,7 +194,7 @@ class LdapRdbmsAdapter extends AbstractAdapter
      * password_hash("teste",PASSWORD_DEFAULT, [ "cost" => 15 ])
      * 
      * @throws Exception
-     * @return \Zend\Authentication\Result
+     * @return \Laminas\Authentication\Result
      */
     private function authenticateRdbms()
     {

@@ -1,5 +1,5 @@
 <?php
-namespace marcelbonnet\Slim\Auth\Events;
+namespace czhujer\Slim\Auth\Events;
 
 /**
  * Slim Authentication Events
@@ -22,7 +22,7 @@ interface SlimAuthEventInterface {
 	 * Fired after a succesfull authentication
 	 * @param string $identity the identity
 	 * @param array $roles the roles
-	 * @return array Any object to be injected in Zend\Authentication\Result
+	 * @return array Any object to be injected in Laminas\Authentication\Result
 	 */
 	public function onLogin($identity=null, array $roles=null);
 	

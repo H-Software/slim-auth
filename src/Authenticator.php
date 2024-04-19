@@ -7,9 +7,9 @@
  * @copyright Copyright (c) 2013-2016 Jeremy Kendall (http://about.me/jeremykendall) with changes: (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth;
+namespace czhujer\Slim\Auth;
 
-use Zend\Authentication\AuthenticationServiceInterface;
+use Laminas\Authentication\AuthenticationServiceInterface;
 
 /**
  * Authenticates users.
@@ -37,9 +37,9 @@ final class Authenticator
      * @param string $identity   User identifier (username, email, etc)
      * @param string $credential User password
      *
-     * @return Zend\Authentication\Result
+     * @return Laminas\Authentication\Result
      *
-     * @throws Zend\Authentication\Exception\RuntimeException
+     * @throws Laminas\Authentication\Exception\RuntimeException
      */
     public function authenticate($identity, $credential)
     {

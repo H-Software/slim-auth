@@ -7,10 +7,10 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth\Adapter;
+namespace czhujer\Slim\Auth\Adapter;
 
-use Zend\Authentication\Adapter\Ldap;
-use marcelbonnet\Slim\Auth\Exception\SlimAuthException;
+use Laminas\Authentication\Adapter\Ldap;
+use czhujer\Slim\Auth\Exception\SlimAuthException;
 
 /**
  * LDAP Adapter for Slim Framework
@@ -28,7 +28,7 @@ class SlimLdapAdapter extends Ldap{
 
 	/**
 	 * @param string $filename LDAP config file
-	 * @throws \marcelbonnet\Slim\Auth\Exception\SlimAuthException
+	 * @throws \czhujer\Slim\Auth\Exception\SlimAuthException
 	 */
 	public static function addLdapConfig($filename){
 		if(!file_exists($filename)){
@@ -44,9 +44,9 @@ class SlimLdapAdapter extends Ldap{
 			throw SlimAuthException::configFileIsNotSet();
 		}
 		//TODO check what Zend Exceptions may occour, if any, and enclose in SlimAuthException messages
-		$configReader = new \Zend\Config\Reader\Ini();
+		$configReader = new \Laminas\Config\Reader\Ini();
 		$configData = $configReader->fromFile(self::$configFile);
-		$config = new \Zend\Config\Config($configData, false);
+		$config = new \Laminas\Config\Config($configData, false);
 		$options = $config->ldapauth->ldap->toArray();
 		$this->setOptions($options);
 		$this->setUsername($username);

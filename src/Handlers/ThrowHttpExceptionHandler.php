@@ -7,10 +7,10 @@
  * @copyright Copyright (c) 2013-2016 Jeremy Kendall (http://about.me/jeremykendall) with changes: (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth\Handlers;
+namespace czhujer\Slim\Auth\Handlers;
 
-use marcelbonnet\Slim\Auth\Exception\HttpForbiddenException;
-use marcelbonnet\Slim\Auth\Exception\HttpUnauthorizedException;
+use czhujer\Slim\Auth\Exception\HttpForbiddenException;
+use czhujer\Slim\Auth\Exception\HttpUnauthorizedException;
 use Psr\Http\Message\ResponseInterface;
 
 /**
