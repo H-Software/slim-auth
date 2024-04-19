@@ -37,9 +37,9 @@ final class Authenticator
      * @param string $identity   User identifier (username, email, etc)
      * @param string $credential User password
      *
-     * @return Zend\Authentication\Result
+     * @return Laminas\Authentication\Result
      *
-     * @throws Zend\Authentication\Exception\RuntimeException
+     * @throws Laminas\Authentication\Exception\RuntimeException
      */
     public function authenticate($identity, $credential)
     {
