@@ -9,8 +9,8 @@
  */
 namespace czhujer\Slim\Auth\Adapter;
 
-use Zend\Authentication\Adapter\Ldap;
-use marcelbonnet\Slim\Auth\Exception\SlimAuthException;
+use Laminas\Authentication\Adapter\Ldap;
+use czhujer\Slim\Auth\Exception\SlimAuthException;
 
 /**
  * LDAP Adapter for Slim Framework
@@ -28,7 +28,7 @@ class SlimLdapAdapter extends Ldap{
 
 	/**
 	 * @param string $filename LDAP config file
-	 * @throws \marcelbonnet\Slim\Auth\Exception\SlimAuthException
+	 * @throws \czhujer\Slim\Auth\Exception\SlimAuthException
 	 */
 	public static function addLdapConfig($filename){
 		if(!file_exists($filename)){
