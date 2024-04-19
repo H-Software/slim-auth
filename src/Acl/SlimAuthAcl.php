@@ -7,9 +7,9 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth\Acl;
+namespace czhujer\Slim\Auth\Acl;
 
-use Zend\Permissions\Acl\Acl as ZendAcl;
+use Laminas\Permissions\Acl\Acl as ZendAcl;
 
 /**
  * ACL with some facilities
