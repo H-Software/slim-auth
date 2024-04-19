@@ -39,12 +39,12 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"h-software\\Slim\\Auth\\" : "src/"
+			"czhujer\\Slim\\Auth\\" : "src/"
 		}
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"h-software\\Slim\\Auth\\Tests\\" : "tests/"
+			"czhujer\\Slim\\Auth\\Tests\\" : "tests/"
 		}
 	},
 	"suggest" : {
