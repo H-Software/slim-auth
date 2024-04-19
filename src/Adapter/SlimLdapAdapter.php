@@ -44,9 +44,9 @@ class SlimLdapAdapter extends Ldap{
 			throw SlimAuthException::configFileIsNotSet();
 		}
 		//TODO check what Zend Exceptions may occour, if any, and enclose in SlimAuthException messages
-		$configReader = new \Zend\Config\Reader\Ini();
+		$configReader = new \Laminas\Config\Reader\Ini();
 		$configData = $configReader->fromFile(self::$configFile);
-		$config = new \Zend\Config\Config($configData, false);
+		$config = new \Laminas\Config\Config($configData, false);
 		$options = $config->ldapauth->ldap->toArray();
 		$this->setOptions($options);
 		$this->setUsername($username);
