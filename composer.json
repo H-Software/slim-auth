@@ -1,5 +1,5 @@
 {
-	"name" : "marcelbonnet/slim-auth",
+	"name" : "h-software/slim-auth",
 	"description" : "Authorization and authentication for the Slim Framework using ZF2 Authentication and Acl components",
 	"homepage" : "https://github.com/marcelbonnet/slim-auth",
 	"support" : {
@@ -39,12 +39,12 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"marcelbonnet\\Slim\\Auth\\" : "src/"
+			"h-software\\Slim\\Auth\\" : "src/"
 		}
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"marcelbonnet\\Slim\\Auth\\Tests\\" : "tests/"
+			"h-software\\Slim\\Auth\\Tests\\" : "tests/"
 		}
 	},
 	"suggest" : {
