@@ -93,7 +93,7 @@ $container = $app->getContainer();
  */
 $acl = new Acl();
 //ACLed Slim Route
-$container['router'] = new \czhujer\Slim\Auth\Route\AuthorizableRouter(null, $acl);
+$container['router'] = new \marcelbonnet\Slim\Auth\Route\AuthorizableRouter(null, $acl);
 $container['acl']    = $acl;
 
 $adapterOptions = [];

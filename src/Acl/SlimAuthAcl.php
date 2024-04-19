@@ -17,7 +17,7 @@ use Laminas\Permissions\Acl\Acl as ZendAcl;
  * roles, resources and permissions
  * @author marcelbonnet
  * @see https://github.com/marcelbonnet/slim-allinone-template
- * @see \czhujer\Slim\Auth\Acl\Acl::__construct()
+ * @see \marcelbonnet\Slim\Auth\Acl\Acl::__construct()
  * @since 0.0.2
  */
 class SlimAuthAcl extends ZendAcl

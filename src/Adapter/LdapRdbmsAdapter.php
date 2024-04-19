@@ -55,11 +55,11 @@ class LdapRdbmsAdapter extends AbstractAdapter
     protected $options				= null;
     
     /**
-     * @var \czhujer\Slim\Auth\Events\SlimAuthEventInterface
+     * @var \marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface
      */
     protected $authenticationEvent	= null;
     /**
-     * @var \czhujer\Slim\Auth\Events\SlimAuthorizationEventInterface
+     * @var \marcelbonnet\Slim\Auth\Events\SlimAuthorizationEventInterface
      */
     protected $authorizationEvent	= null;
 

@@ -23,7 +23,7 @@ interface AuthHandler
      *
      * @return ResponseInterface
      *
-     * @throws \czhujer\Slim\Auth\Exception\HttpException
+     * @throws \marcelbonnet\Slim\Auth\Exception\HttpException
      */
     public function notAuthenticated(ResponseInterface $response);
 
@@ -34,7 +34,7 @@ interface AuthHandler
      *
      * @return ResponseInterface
      *
-     * @throws \czhujer\Slim\Auth\Exception\HttpException
+     * @throws \marcelbonnet\Slim\Auth\Exception\HttpException
      */
     public function notAuthorized(ResponseInterface $response);
 }
