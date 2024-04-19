@@ -9,8 +9,8 @@
  */
 namespace czhujer\Slim\Auth\Adapter;
 
-use Laminas\Authentication\Adapter\AbstractAdapter;
-use laminas\Authentication\Result as AuthenticationResult;
+use Zend\Authentication\Adapter\AbstractAdapter;
+use Zend\Authentication\Result as AuthenticationResult;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
 use czhujer\Slim\Auth\Events\SlimAuthEventInterface;
