@@ -180,11 +180,11 @@ class LdapRdbmsAdapter extends AbstractAdapter
      */
     private function authenticateLdap()
     {
-    	$configReader = new \Zend\Config\Reader\Ini();
+    	$configReader = new \Laminas\Config\Reader\Ini();
     	$configData = $configReader->fromFile(self::$configFile);
-    	$config = new \Zend\Config\Config($configData, false);
+    	$config = new \Laminas\Config\Config($configData, false);
     	$options = $config->ldapauth->ldap->toArray();
-    	$adapter = new \Zend\Authentication\Adapter\Ldap($options);
+    	$adapter = new \Laminas\Authentication\Adapter\Ldap($options);
     	$adapter->setIdentity($this->getIdentity());
     	$adapter->setCredential($this->getCredential());
     	return $adapter->authenticate();
@@ -194,7 +194,7 @@ class LdapRdbmsAdapter extends AbstractAdapter
      * password_hash("teste",PASSWORD_DEFAULT, [ "cost" => 15 ])
      * 
      * @throws Exception
-     * @return \Zend\Authentication\Result
+     * @return \Laminas\Authentication\Result
      */
     private function authenticateRdbms()
     {
