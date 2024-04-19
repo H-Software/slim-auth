@@ -10,7 +10,7 @@
 namespace czhujer\Slim\Auth\Adapter;
 
 use Laminas\Authentication\Adapter\AbstractAdapter;
-use laminas\Authentication\Result as AuthenticationResult;
+use Laminas\Authentication\Result as AuthenticationResult;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
 use marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface;
