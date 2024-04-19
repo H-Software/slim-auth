@@ -1,5 +1,5 @@
 {
-	"name" : "marcelbonnet/slim-auth",
+	"name" : "h-software/slim-auth",
 	"description" : "Authorization and authentication for the Slim Framework using ZF2 Authentication and Acl components",
 	"homepage" : "https://github.com/marcelbonnet/slim-auth",
 	"support" : {
@@ -24,13 +24,13 @@
 		"zf2"
 	],
 	"require" : {
-		"php" : ">=5.6.0",
-		"zendframework/zend-authentication" : "2.*",
-		"zendframework/zend-permissions-acl" : "2.*",
-		"zendframework/zend-session" : "2.*",
-	        "zendframework/zend-config" : "^2.6.0",
-	        "zendframework/zend-ldap" : "^2.7.1",
-	        "doctrine/orm" : "^2.5"
+		"php" : "~8.1.0 || ~8.2.0 || ~8.3.0",
+		"laminas/laminas-authentication" : "~2.16",
+		"laminas/laminas-permissions-acl" : "~2.16",
+		"laminas/laminas-session" : "~2.20",
+		"laminas/laminas-config" : "~3.9",
+		"laminas/laminas-ldap" : "~2.18",
+		"doctrine/orm" : "^2.5"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "4.*",
@@ -39,14 +39,17 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"marcelbonnet\\Slim\\Auth\\" : "src/"
+			"h-software\\Slim\\Auth\\" : "src/"
 		}
 	},
 	"autoload-dev" : {
 		"psr-4" : {
-			"marcelbonnet\\Slim\\Auth\\Tests\\" : "tests/"
+			"h-software\\Slim\\Auth\\Tests\\" : "tests/"
 		}
 	},
 	"suggest" : {
-	}
+	},
+	"conflict": {
+        "marcelbonnet/slim-auth": "^2.0"
+    }
 }
