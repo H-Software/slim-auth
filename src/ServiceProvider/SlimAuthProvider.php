@@ -56,14 +56,14 @@ final class SlimAuthProvider implements ServiceProviderInterface
                 $redirectNotAuthorized = $c['redirectNotAuthorized'];
             }
 
-            return new \marcelbonnet\Slim\Auth\Handlers\RedirectHandler(
+            return new \czhujer\Slim\Auth\Handlers\RedirectHandler(
                 $redirectNotAuthenticated,
                 $redirectNotAuthorized
             );
         };
 
         $pimple['throwHttpExceptionHandler'] = function ($c) {
-            return new \marcelbonnet\Slim\Auth\Handlers\ThrowHttpExceptionHandler();
+            return new \czhujer\Slim\Auth\Handlers\ThrowHttpExceptionHandler();
         };
 
         $pimple['slimAuthRedirectMiddleware'] = function ($c) {
