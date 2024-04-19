@@ -25,11 +25,11 @@
 	],
 	"require" : {
 		"php" : "~8.1.0 || ~8.2.0 || ~8.3.0",
-		"zendframework/zend-authentication" : "2.*",
-		"zendframework/zend-permissions-acl" : "2.*",
-		"zendframework/zend-session" : "2.*",
-		"laminas/laminas-config" : "^3.9.0",
-		"zendframework/zend-ldap" : "^2.7.1",
+		"laminas/laminas-authentication" : "~2.16",
+		"laminas/laminas-permissions-acl" : "~2.16",
+		"laminas/laminas-session" : "~2.20",
+		"laminas/laminas-config" : "~3.9",
+		"laminas/laminas-ldap" : "~2.18",
 		"doctrine/orm" : "^2.5"
 	},
 	"require-dev" : {
