@@ -7,7 +7,7 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace czhujer\Slim\Auth\Exception;
+namespace marcelbonnet\Slim\Auth\Exception;
 
 use Exception;
 

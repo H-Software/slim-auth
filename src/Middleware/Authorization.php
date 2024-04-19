@@ -7,14 +7,14 @@
  * @copyright Copyright (c) 2013-2016 Jeremy Kendall (http://about.me/jeremykendall) with changes: (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace czhujer\Slim\Auth\Middleware;
+namespace marcelbonnet\Slim\Auth\Middleware;
 
-namespace czhujer\Slim\Auth\Handlers\AuthHandler;
+use marcelbonnet\Slim\Auth\Handlers\AuthHandler;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Authentication\AuthenticationServiceInterface;
 use Zend\Permissions\Acl\AclInterface;
-namespace czhujer\Slim\Auth\Route\AuthorizableRoute;
+use marcelbonnet\Slim\Auth\Route\AuthorizableRoute;
 
 /**
  * Authorization middleware: Checks user's authorization to access the

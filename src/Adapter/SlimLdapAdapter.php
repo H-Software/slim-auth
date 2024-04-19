@@ -7,10 +7,10 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace czhujer\Slim\Auth\Adapter;
+namespace marcelbonnet\Slim\Auth\Adapter;
 
 use Zend\Authentication\Adapter\Ldap;
-namespace czhujer\Slim\Auth\Exception\SlimAuthException;
+use marcelbonnet\Slim\Auth\Exception\SlimAuthException;
 
 /**
  * LDAP Adapter for Slim Framework

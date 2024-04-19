@@ -7,7 +7,7 @@
  * @copyright Copyright (c) 2013-2016 Jeremy Kendall (http://about.me/jeremykendall) with changes: (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace czhujer\Slim\Auth\Exception;
+namespace marcelbonnet\Slim\Auth\Exception;
 
 /**
  * HTTP 403 Forbidden Exception.

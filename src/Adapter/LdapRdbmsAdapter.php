@@ -7,13 +7,13 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace czhujer\Slim\Auth\Adapter;
+namespace marcelbonnet\Slim\Auth\Adapter;
 
 use Laminas\Authentication\Adapter\AbstractAdapter;
 use laminas\Authentication\Result as AuthenticationResult;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
-use czhujer\Slim\Auth\Events\SlimAuthEventInterface;
+use marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface;
 
 /**
  * Authenticate through LDAP

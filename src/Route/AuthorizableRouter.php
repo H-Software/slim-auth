@@ -1,5 +1,5 @@
 <?php
-namespace czhujer\Slim\Auth\Route;
+namespace marcelbonnet\Slim\Auth\Route;
 
 use Slim\Router;
 

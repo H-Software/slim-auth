@@ -64,11 +64,11 @@ class Role {
 ## index.php
 
 ```php
-namespace czhujer\Slim\Auth\ServiceProvider\SlimAuthProvider;
+use marcelbonnet\Slim\Auth\ServiceProvider\SlimAuthProvider;
 use Zend\Authentication\Storage\Session as SessionStorage;
-namespace czhujer\Slim\Auth\Middleware\Authorization;
-namespace czhujer\Slim\Auth\Handlers\RedirectHandler;
-namespace czhujer\Slim\Auth\Adapter\LdapRdbmsAdapter;
+use marcelbonnet\Slim\Auth\Middleware\Authorization;
+use marcelbonnet\Slim\Auth\Handlers\RedirectHandler;
+use marcelbonnet\Slim\Auth\Adapter\LdapRdbmsAdapter;
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
