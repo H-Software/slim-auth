@@ -1,5 +1,5 @@
 <?php
-namespace marcelbonnet\Slim\Auth\Route;
+namespace czhujer\Slim\Auth\Route;
 
 use Slim\Route;
 
@@ -15,7 +15,7 @@ class AuthorizableRoute extends Route {
 	/**
 	 * Zend Acl
 	 *
-	 * @var \Zend\Permissions\Acl\Acl
+	 * @var \Laminas\Permissions\Acl\Acl
 	 */
 	protected $acl;
 	
@@ -27,7 +27,7 @@ class AuthorizableRoute extends Route {
      * @param callable     				$callable The route callable
      * @param int          				$identifier The route identifier
      * @param RouteGroup[] 				$groups The parent route groups
-	 * @param \Zend\Permissions\Acl\Acl 	$acl
+	 * @param \Laminas\Permissions\Acl\Acl 	$acl
 	 */
 	public function __construct($methods, $pattern, $callable, $groups, $identifier, &$acl=null)
 	{
@@ -62,7 +62,7 @@ class AuthorizableRoute extends Route {
 	}
 	
 	/**
-	 * @return \Zend\Permissions\Acl\Acl
+	 * @return \Laminas\Permissions\Acl\Acl
 	 */
 	public function getAcl() {
 		return $this->acl;

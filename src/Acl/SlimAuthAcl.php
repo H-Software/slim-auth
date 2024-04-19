@@ -92,7 +92,7 @@ class SlimAuthAcl extends ZendAcl
 	 * 
 	 * http://stackoverflow.com/questions/14540445/zend-acl-how-to-check-a-user-with-multiple-roles-for-resource-access
 	 * {@inheritDoc}
-	 * @see \Zend\Permissions\Acl\Acl::isAllowed()
+	 * @see \Laminas\Permissions\Acl\Acl::isAllowed()
 	 */
 	public function isAllowed($roleOrUser = null, $resource = null, $privilege = null)
 	{

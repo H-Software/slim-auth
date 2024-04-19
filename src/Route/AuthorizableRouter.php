@@ -1,5 +1,5 @@
 <?php
-namespace marcelbonnet\Slim\Auth\Route;
+namespace czhujer\Slim\Auth\Route;
 
 use Slim\Router;
 
@@ -13,9 +13,9 @@ use Slim\Router;
 class AuthorizableRouter extends Router {
 	
 	/**
-	 * \Zend\Permissions\Acl\Acl shared with AuthorizableRoute
+	 * \Laminas\Permissions\Acl\Acl shared with AuthorizableRoute
 	 *
-	 * @var \Zend\Permissions\Acl\Acl
+	 * @var \Laminas\Permissions\Acl\Acl
 	 */
 	protected $acl;
 	
@@ -32,7 +32,7 @@ class AuthorizableRouter extends Router {
 	}
 
 	/**
-	 * @return \Zend\Permissions\Acl\Acl
+	 * @return \Laminas\Permissions\Acl\Acl
 	 */
 	public function getAcl() {
 		return $this->acl;
