@@ -1,5 +1,5 @@
 {
-	"name" : "hsoftware/slim-auth",
+	"name" : "czhujer/slim-auth",
 	"description" : "Authorization and authentication for the Slim Framework using ZF2 Authentication and Acl components",
 	"homepage" : "https://github.com/marcelbonnet/slim-auth",
 	"support" : {
