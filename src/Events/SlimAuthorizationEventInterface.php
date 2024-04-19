@@ -1,5 +1,5 @@
 <?php
-namespace marcelbonnet\Slim\Auth\Events;
+namespace czhujer\Slim\Auth\Events;
 
 /**
  * Slim Authorization Events
