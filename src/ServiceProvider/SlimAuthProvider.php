@@ -56,18 +56,18 @@ final class SlimAuthProvider implements ServiceProviderInterface
                 $redirectNotAuthorized = $c['redirectNotAuthorized'];
             }
 
-            return new \marcelbonnet\Slim\Auth\Handlers\RedirectHandler(
+            return new \czhujer\Slim\Auth\Handlers\RedirectHandler(
                 $redirectNotAuthenticated,
                 $redirectNotAuthorized
             );
         };
 
         $pimple['throwHttpExceptionHandler'] = function ($c) {
-            return new \marcelbonnet\Slim\Auth\Handlers\ThrowHttpExceptionHandler();
+            return new \czhujer\Slim\Auth\Handlers\ThrowHttpExceptionHandler();
         };
 
         $pimple['slimAuthRedirectMiddleware'] = function ($c) {
-            return new \marcelbonnet\Slim\Auth\Middleware\Authorization(
+            return new \czhujer\Slim\Auth\Middleware\Authorization(
                 $c->get('auth'),
                 $c->get('acl'),
                 $c->get('redirectHandler')
@@ -75,7 +75,7 @@ final class SlimAuthProvider implements ServiceProviderInterface
         };
 
         $pimple['slimAuthThrowHttpExceptionMiddleware'] = function ($c) {
-            return new \marcelbonnet\Slim\Auth\Middleware\Authorization(
+            return new \czhujer\Slim\Auth\Middleware\Authorization(
                 $c->get('auth'),
                 $c->get('acl'),
                 $c->get('throwHttpExceptionHandler')
@@ -83,7 +83,7 @@ final class SlimAuthProvider implements ServiceProviderInterface
         };
 
         $pimple['authenticator'] = function ($c) {
-            return new \marcelbonnet\Slim\Auth\Authenticator($c->get('auth'));
+            return new \czhujer\Slim\Auth\Authenticator($c->get('auth'));
         };
     }
 }

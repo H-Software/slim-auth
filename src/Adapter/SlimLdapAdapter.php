@@ -28,7 +28,7 @@ class SlimLdapAdapter extends Ldap{
 
 	/**
 	 * @param string $filename LDAP config file
-	 * @throws \marcelbonnet\Slim\Auth\Exception\SlimAuthException
+	 * @throws \czhujer\Slim\Auth\Exception\SlimAuthException
 	 */
 	public static function addLdapConfig($filename){
 		if(!file_exists($filename)){

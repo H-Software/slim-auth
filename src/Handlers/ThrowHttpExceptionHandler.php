@@ -25,7 +25,7 @@ final class ThrowHttpExceptionHandler implements AuthHandler
      *
      * @return ResponseInterface
      *
-     * @throws \marcelbonnet\Slim\Auth\Exception\HttpUnauthorizedException
+     * @throws \czhujer\Slim\Auth\Exception\HttpUnauthorizedException
      */
     public function notAuthenticated(ResponseInterface $response)
     {
@@ -39,7 +39,7 @@ final class ThrowHttpExceptionHandler implements AuthHandler
      *
      * @return ResponseInterface
      *
-     * @throws \marcelbonnet\Slim\Auth\Exception\HttpForbiddenException
+     * @throws \czhujer\Slim\Auth\Exception\HttpForbiddenException
      */
     public function notAuthorized(ResponseInterface $response)
     {
