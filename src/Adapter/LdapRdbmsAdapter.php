@@ -7,13 +7,13 @@
  * @copyright Copyright (c) 2016 Marcel Bonnet (http://github.com/marcelbonnet)
  * @license   MIT
  */
-namespace marcelbonnet\Slim\Auth\Adapter;
+namespace czhujer\Slim\Auth\Adapter;
 
 use Zend\Authentication\Adapter\AbstractAdapter;
 use Zend\Authentication\Result as AuthenticationResult;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Query;
-use marcelbonnet\Slim\Auth\Events\SlimAuthEventInterface;
+use czhujer\Slim\Auth\Events\SlimAuthEventInterface;
 
 /**
  * Authenticate through LDAP

@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2013-2016 Jeremy Kendall (http://about.me/marcelbonnet)
  * @license   http://github.com/marcelbonnet/slim-auth/blob/master/LICENSE MIT
  */
-namespace marcelbonnet\Slim\Auth\ServiceProvider;
+namespace czhujer\Slim\Auth\ServiceProvider;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
